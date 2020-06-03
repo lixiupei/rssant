@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: rssant
+  name: rssant
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: rssant
+  template:
+    metadata:
+      labels:
+        app: webapp
+    spec:
+      containers:
+        - image: swr.troila.com/python-test/python:test
+          imagePullPolicy: IfNotPresent
+          name: python-test
+      restartPolicy: Always
+
