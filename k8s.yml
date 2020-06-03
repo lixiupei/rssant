@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: test
 kind: Deployment
 metadata:
   labels:
@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       labels:
-        app: webapp
+        app: rssant
     spec:
       containers:
         - image: swr.troila.com/python-test/python:test
