@@ -41,7 +41,7 @@ html2text==2020.1.16
 readability-lxml==0.7.1
 
 # aiolibs
-aiohttp==3.6.2
+aiohttp==3.7.4
 aiodns==2.0.0
 aiohttp-devtools==0.13.1
 aiojobs==0.2.2
